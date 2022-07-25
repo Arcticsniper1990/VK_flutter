@@ -33,12 +33,16 @@ class _RegistrWidgetState extends State<RegistrWidget> {
           ),
           SizedBox(height: 20),
           TextField(
-            style: TextStyle(color: Colors.white),
+            keyboardType: TextInputType.phone,
+            style: TextStyle(color: Colors.white, fontSize: 18),
             decoration: InputDecoration(
-                border: OutlineInputBorder(),
-                hintText: '  Номер телефона',
-                hintStyle: TextStyle(color: Colors.grey.shade500, fontSize: 15),
-                enabled: true),
+              border: OutlineInputBorder(),
+              hintText: 'Номер телефона',
+              hintStyle: TextStyle(color: Colors.grey.shade500, fontSize: 18),
+              enabled: true,
+              prefixText: "+7 | ",
+              prefixStyle: TextStyle(color: Colors.white, fontSize: 18),
+            ),
           ),
           SizedBox(height: 50),
           Container(
